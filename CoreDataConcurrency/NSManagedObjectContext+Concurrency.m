@@ -27,6 +27,11 @@ static NSString const * kMagicalRecordManagedObjectContextKey = @"MagicalRecord_
 
 + (void) MR_setDefaultContext:(NSManagedObjectContext *)moc
 {
+    if (defaultManagedObjectContext_)
+    {
+        [[NSNotificationCenter defaultCenter] removeObserver:defaultManagedObjectContext_];
+    }
+
     defaultManagedObjectContext_ = moc;
 }
 
