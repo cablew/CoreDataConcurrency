@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0F2FF916AC2C3C00A48959 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0F2FF816AC2C3C00A48959 /* Owner.m */; };
 		CB64A81016AAC48F00A9057F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64A80F16AAC48F00A9057F /* UIKit.framework */; };
 		CB64A81216AAC48F00A9057F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64A81116AAC48F00A9057F /* Foundation.framework */; };
 		CB64A81416AAC48F00A9057F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64A81316AAC48F00A9057F /* CoreGraphics.framework */; };
@@ -23,6 +24,19 @@
 		CB64A83616AAC48F00A9057F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64A81116AAC48F00A9057F /* Foundation.framework */; };
 		CB64A83E16AAC48F00A9057F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB64A83C16AAC48F00A9057F /* InfoPlist.strings */; };
 		CB64A84116AAC48F00A9057F /* CoreDataConcurrencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB64A84016AAC48F00A9057F /* CoreDataConcurrencyTests.m */; };
+		CB64A84C16AAC4CE00A9057F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB64A84A16AAC4CE00A9057F /* Model.xcdatamodeld */; };
+		CB64A85F16AADD1C00A9057F /* ManagedObjectContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB64A85E16AADD1C00A9057F /* ManagedObjectContextManager.m */; };
+		CB64A87216ABCF9600A9057F /* Owner+Concurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = CB64A87116ABCF9600A9057F /* Owner+Concurrency.m */; };
+		CB64A88A16ABD45300A9057F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB64A88916ABD45300A9057F /* CoreData.framework */; };
+		CBBBB53616ACB578009D3608 /* CarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBBB53516ACB578009D3608 /* CarsViewController.m */; };
+		CBBBB54516ACF098009D3608 /* GCDQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBBB54416ACF098009D3608 /* GCDQueueManager.m */; };
+		CBBBB54C16AD10BC009D3608 /* Car+Concurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBBB54B16AD10BC009D3608 /* Car+Concurrency.m */; };
+		CBBBB55316AD32D0009D3608 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBBB55216AD32D0009D3608 /* Car.m */; };
+		CBD4002016AE274B009A567A /* FetchRequestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4001F16AE274B009A567A /* FetchRequestTableViewController.m */; };
+		CBD4003616AE3727009A567A /* NSManagedObjectContext+Concurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4003516AE3727009A567A /* NSManagedObjectContext+Concurrency.m */; };
+		CBD4003D16AE685D009A567A /* FashionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4003C16AE685D009A567A /* FashionableViewController.m */; };
+		CBD4004016AE6AE7009A567A /* CarsFashionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4003F16AE6AE7009A567A /* CarsFashionableViewController.m */; };
+		CBD4004316AE6CBB009A567A /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD4004216AE6CBB009A567A /* Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0F2FF716AC2C3C00A48959 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Owner.h; sourceTree = "<group>"; };
+		CB0F2FF816AC2C3C00A48959 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
 		CB64A80B16AAC48F00A9057F /* CoreDataConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB64A80F16AAC48F00A9057F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB64A81116AAC48F00A9057F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,8 +60,8 @@
 		CB64A81916AAC48F00A9057F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB64A81B16AAC48F00A9057F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB64A81D16AAC48F00A9057F /* CoreDataConcurrency-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataConcurrency-Prefix.pch"; sourceTree = "<group>"; };
-		CB64A81E16AAC48F00A9057F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CB64A81F16AAC48F00A9057F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB64A81E16AAC48F00A9057F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CoreDataConcurrency/AppDelegate.h; sourceTree = "<group>"; };
+		CB64A81F16AAC48F00A9057F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = CoreDataConcurrency/AppDelegate.m; sourceTree = "<group>"; };
 		CB64A82116AAC48F00A9057F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CB64A82316AAC48F00A9057F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CB64A82516AAC48F00A9057F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -58,6 +74,30 @@
 		CB64A83D16AAC48F00A9057F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB64A83F16AAC48F00A9057F /* CoreDataConcurrencyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataConcurrencyTests.h; sourceTree = "<group>"; };
 		CB64A84016AAC48F00A9057F /* CoreDataConcurrencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataConcurrencyTests.m; sourceTree = "<group>"; };
+		CB64A84B16AAC4CE00A9057F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CB64A85D16AADD1C00A9057F /* ManagedObjectContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedObjectContextManager.h; sourceTree = "<group>"; };
+		CB64A85E16AADD1C00A9057F /* ManagedObjectContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedObjectContextManager.m; sourceTree = "<group>"; };
+		CB64A87016ABCF9600A9057F /* Owner+Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Owner+Concurrency.h"; sourceTree = "<group>"; };
+		CB64A87116ABCF9600A9057F /* Owner+Concurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Owner+Concurrency.m"; sourceTree = "<group>"; };
+		CB64A88916ABD45300A9057F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CBBBB53416ACB578009D3608 /* CarsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsViewController.h; sourceTree = "<group>"; };
+		CBBBB53516ACB578009D3608 /* CarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsViewController.m; sourceTree = "<group>"; };
+		CBBBB54316ACF098009D3608 /* GCDQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueueManager.h; sourceTree = "<group>"; };
+		CBBBB54416ACF098009D3608 /* GCDQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueueManager.m; sourceTree = "<group>"; };
+		CBBBB54A16AD10BC009D3608 /* Car+Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Concurrency.h"; sourceTree = "<group>"; };
+		CBBBB54B16AD10BC009D3608 /* Car+Concurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Concurrency.m"; sourceTree = "<group>"; };
+		CBBBB55116AD32D0009D3608 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		CBBBB55216AD32D0009D3608 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		CBD4001E16AE274B009A567A /* FetchRequestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchRequestTableViewController.h; sourceTree = "<group>"; };
+		CBD4001F16AE274B009A567A /* FetchRequestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchRequestTableViewController.m; sourceTree = "<group>"; };
+		CBD4003416AE3727009A567A /* NSManagedObjectContext+Concurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Concurrency.h"; sourceTree = "<group>"; };
+		CBD4003516AE3727009A567A /* NSManagedObjectContext+Concurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Concurrency.m"; sourceTree = "<group>"; };
+		CBD4003B16AE685D009A567A /* FashionableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionableViewController.h; sourceTree = "<group>"; };
+		CBD4003C16AE685D009A567A /* FashionableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionableViewController.m; sourceTree = "<group>"; };
+		CBD4003E16AE6AE7009A567A /* CarsFashionableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsFashionableViewController.h; sourceTree = "<group>"; };
+		CBD4003F16AE6AE7009A567A /* CarsFashionableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsFashionableViewController.m; sourceTree = "<group>"; };
+		CBD4004116AE6CBB009A567A /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		CBD4004216AE6CBB009A567A /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB64A88A16ABD45300A9057F /* CoreData.framework in Frameworks */,
 				CB64A81016AAC48F00A9057F /* UIKit.framework in Frameworks */,
 				CB64A81216AAC48F00A9057F /* Foundation.framework in Frameworks */,
 				CB64A81416AAC48F00A9057F /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				CB64A81516AAC48F00A9057F /* CoreDataConcurrency */,
+				CB64A81E16AAC48F00A9057F /* AppDelegate.h */,
+				CB64A81F16AAC48F00A9057F /* AppDelegate.m */,
 				CB64A83916AAC48F00A9057F /* CoreDataConcurrencyTests */,
 				CB64A80E16AAC48F00A9057F /* Frameworks */,
 				CB64A80C16AAC48F00A9057F /* Products */,
@@ -106,6 +149,7 @@
 		CB64A80E16AAC48F00A9057F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB64A88916ABD45300A9057F /* CoreData.framework */,
 				CB64A80F16AAC48F00A9057F /* UIKit.framework */,
 				CB64A81116AAC48F00A9057F /* Foundation.framework */,
 				CB64A81316AAC48F00A9057F /* CoreGraphics.framework */,
@@ -117,11 +161,13 @@
 		CB64A81516AAC48F00A9057F /* CoreDataConcurrency */ = {
 			isa = PBXGroup;
 			children = (
-				CB64A81E16AAC48F00A9057F /* AppDelegate.h */,
-				CB64A81F16AAC48F00A9057F /* AppDelegate.m */,
 				CB64A82716AAC48F00A9057F /* MainStoryboard.storyboard */,
-				CB64A82A16AAC48F00A9057F /* ViewController.h */,
-				CB64A82B16AAC48F00A9057F /* ViewController.m */,
+				CBBBB54616ACF0A3009D3608 /* GCD */,
+				CB64A86116AADD5F00A9057F /* ManagedObjectContext */,
+				CB64A86016AADD3500A9057F /* CoreData */,
+				CBD4004416AE7A17009A567A /* Traditional Way */,
+				CBD4004516AE7A2E009A567A /* Fashionable Way */,
+				CBD4004616AE7A56009A567A /* Hepler Class */,
 				CB64A81616AAC48F00A9057F /* Supporting Files */,
 			);
 			path = CoreDataConcurrency;
@@ -158,6 +204,75 @@
 				CB64A83C16AAC48F00A9057F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB64A86016AADD3500A9057F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CB64A84A16AAC4CE00A9057F /* Model.xcdatamodeld */,
+				CBBBB55116AD32D0009D3608 /* Car.h */,
+				CBBBB55216AD32D0009D3608 /* Car.m */,
+				CB0F2FF716AC2C3C00A48959 /* Owner.h */,
+				CB0F2FF816AC2C3C00A48959 /* Owner.m */,
+				CB64A87016ABCF9600A9057F /* Owner+Concurrency.h */,
+				CB64A87116ABCF9600A9057F /* Owner+Concurrency.m */,
+				CBBBB54A16AD10BC009D3608 /* Car+Concurrency.h */,
+				CBBBB54B16AD10BC009D3608 /* Car+Concurrency.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		CB64A86116AADD5F00A9057F /* ManagedObjectContext */ = {
+			isa = PBXGroup;
+			children = (
+				CB64A85D16AADD1C00A9057F /* ManagedObjectContextManager.h */,
+				CB64A85E16AADD1C00A9057F /* ManagedObjectContextManager.m */,
+				CBD4003416AE3727009A567A /* NSManagedObjectContext+Concurrency.h */,
+				CBD4003516AE3727009A567A /* NSManagedObjectContext+Concurrency.m */,
+			);
+			name = ManagedObjectContext;
+			sourceTree = "<group>";
+		};
+		CBBBB54616ACF0A3009D3608 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				CBBBB54316ACF098009D3608 /* GCDQueueManager.h */,
+				CBBBB54416ACF098009D3608 /* GCDQueueManager.m */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
+		CBD4004416AE7A17009A567A /* Traditional Way */ = {
+			isa = PBXGroup;
+			children = (
+				CB64A82A16AAC48F00A9057F /* ViewController.h */,
+				CB64A82B16AAC48F00A9057F /* ViewController.m */,
+				CBBBB53416ACB578009D3608 /* CarsViewController.h */,
+				CBBBB53516ACB578009D3608 /* CarsViewController.m */,
+			);
+			name = "Traditional Way";
+			sourceTree = "<group>";
+		};
+		CBD4004516AE7A2E009A567A /* Fashionable Way */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4003B16AE685D009A567A /* FashionableViewController.h */,
+				CBD4003C16AE685D009A567A /* FashionableViewController.m */,
+				CBD4003E16AE6AE7009A567A /* CarsFashionableViewController.h */,
+				CBD4003F16AE6AE7009A567A /* CarsFashionableViewController.m */,
+			);
+			name = "Fashionable Way";
+			sourceTree = "<group>";
+		};
+		CBD4004616AE7A56009A567A /* Hepler Class */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4001E16AE274B009A567A /* FetchRequestTableViewController.h */,
+				CBD4001F16AE274B009A567A /* FetchRequestTableViewController.m */,
+				CBD4004116AE6CBB009A567A /* Helper.h */,
+				CBD4004216AE6CBB009A567A /* Helper.m */,
+			);
+			name = "Hepler Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +388,19 @@
 				CB64A81C16AAC48F00A9057F /* main.m in Sources */,
 				CB64A82016AAC48F00A9057F /* AppDelegate.m in Sources */,
 				CB64A82C16AAC48F00A9057F /* ViewController.m in Sources */,
+				CB64A84C16AAC4CE00A9057F /* Model.xcdatamodeld in Sources */,
+				CB64A85F16AADD1C00A9057F /* ManagedObjectContextManager.m in Sources */,
+				CB64A87216ABCF9600A9057F /* Owner+Concurrency.m in Sources */,
+				CB0F2FF916AC2C3C00A48959 /* Owner.m in Sources */,
+				CBBBB53616ACB578009D3608 /* CarsViewController.m in Sources */,
+				CBBBB54516ACF098009D3608 /* GCDQueueManager.m in Sources */,
+				CBBBB54C16AD10BC009D3608 /* Car+Concurrency.m in Sources */,
+				CBBBB55316AD32D0009D3608 /* Car.m in Sources */,
+				CBD4002016AE274B009A567A /* FetchRequestTableViewController.m in Sources */,
+				CBD4003616AE3727009A567A /* NSManagedObjectContext+Concurrency.m in Sources */,
+				CBD4003D16AE685D009A567A /* FashionableViewController.m in Sources */,
+				CBD4004016AE6AE7009A567A /* CarsFashionableViewController.m in Sources */,
+				CBD4004316AE6CBB009A567A /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +575,7 @@
 				CB64A84616AAC48F00A9057F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB64A84716AAC48F00A9057F /* Build configuration list for PBXNativeTarget "CoreDataConcurrencyTests" */ = {
 			isa = XCConfigurationList;
@@ -455,8 +584,22 @@
 				CB64A84916AAC48F00A9057F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB64A84A16AAC4CE00A9057F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB64A84B16AAC4CE00A9057F /* Model.xcdatamodel */,
+			);
+			currentVersion = CB64A84B16AAC4CE00A9057F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CB64A80216AAC48F00A9057F /* Project object */;
 }
