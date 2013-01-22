@@ -17,7 +17,11 @@ typedef void (^MRSaveCompletionHandler)(BOOL success, NSError *error);
 
 @interface NSManagedObjectContext (Concurrency)
 
+// what MR means?
+// why use underscore in middle of method name? it's not conventional
 + (void)MR_initializeDefaultContextWithCoordinator:(NSPersistentStoreCoordinator *)coordinator;
+
+// Could you explain the purpose of the following two methods?
 + (NSManagedObjectContext *)MR_defaultContext;
 + (NSManagedObjectContext *)MR_contextForCurrentThread;
 - (void)MR_saveToPersistentStoreAndWait;

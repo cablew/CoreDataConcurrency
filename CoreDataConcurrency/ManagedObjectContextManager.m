@@ -206,6 +206,10 @@ static ManagedObjectContextManager *contextManager_;
  * Returns the managed object model for the application.
  * If the model doesn't already exist, it is created from the application's model.
  */
+
+// simply call this:
+// return [NSManagedObjectModel mergedModelFromBundles:nil];
+
 -(NSManagedObjectModel *)managedObjectModel {
 	if (_managedObjectModel == nil) {
 		NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"Model" ofType:@"momd"];

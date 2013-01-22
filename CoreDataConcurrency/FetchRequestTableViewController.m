@@ -47,6 +47,10 @@
     self.fetchedResultsController.delegate = self;
 }
 
+// since performFetch is a method of FRC
+// It might cause confusion if it's also a method of this view controller class
+// And logically, reloadData is talbeView's job, not controller's
+// it doens't belong here
 - (void)performFetch
 {
     if (self.fetchedResultsController) {

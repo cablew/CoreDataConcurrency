@@ -71,6 +71,7 @@ enum {
     
     // perform fetch request
     [self performFetch];
+    // I would rather put reloadData here..
     
     [self performTest];
 }
@@ -83,6 +84,8 @@ enum {
 
 #pragma marks - table view related block
 
+// I would just use a customize getter method instead of create a "setup.." method
+// Both will do the same job though
 - (void)setupFetchedResultsController
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Car"];
@@ -167,6 +170,7 @@ enum {
 
 - (void)repeatCreateTask
 {
+    // Instead having a helper method, I would prefer the good old nested async calls for such simple task
     dispatch_async([GCDQueueManager backgroundQueue], ^{
         [self appendCar];
     });
@@ -217,7 +221,7 @@ enum {
 - (Helper *)helper
 {
     if (_helper == nil) {
-        _helper = [Helper alloc];
+        _helper = [Helper alloc]; // why not init?
     }
     return _helper;
 }
