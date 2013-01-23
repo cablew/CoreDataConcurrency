@@ -212,10 +212,12 @@ static ManagedObjectContextManager *contextManager_;
 
 -(NSManagedObjectModel *)managedObjectModel {
 	if (_managedObjectModel == nil) {
+        /*
 		NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"Model" ofType:@"momd"];
 		NSURL *modelURL = [NSURL fileURLWithPath:modelPath];
-		
 		_managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+         */
+        _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
 	}
 	
 	return _managedObjectModel;

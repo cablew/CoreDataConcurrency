@@ -17,8 +17,19 @@
 
 // Are you absolutely sure what you are doing here?
 
-@interface ManagedObjectContextManager : NSManagedObjectContext
+@interface ManagedObjectContextManager : NSObject
 
+// return the singleton context manager that manages all ManagedObjectContexts in this app
 + (ManagedObjectContextManager *)contextManager;
+
+// return a ManagedObjectContext for current thread
 - (NSManagedObjectContext *)managedObjectContextForCurrentThread;
+
+// return the singleton persistentStoreCoordinator for this app
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+
+// delete the presistent store
+// untouched in this project at the moment
+-(void)deleteStore;
+
 @end
