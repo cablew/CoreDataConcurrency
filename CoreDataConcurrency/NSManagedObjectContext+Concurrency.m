@@ -115,12 +115,13 @@ static NSString const * kMagicalRecordManagedObjectContextKey = @"MagicalRecord_
 
 - (void) MR_obtainPermanentIDsBeforeSaving;
 {
+    // we don't need to unregister a MOC from the notification center as an observer
+    // since the notification center won't send any notification to it, if a thread terminate
+    // pay attention to the "object:self"
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(MR_contextWillSave:)
                                                  name:NSManagedObjectContextWillSaveNotification
                                                object:self];
-    
-    
 }
 
 + (NSManagedObjectContext *) MR_contextWithoutParent;
@@ -146,6 +147,7 @@ static NSString const * kMagicalRecordManagedObjectContextKey = @"MagicalRecord_
     {
         NSLog(@"Context %@ is about to save. Obtaining permanent IDs for new %lu inserted objects", [context MR_workingName], (unsigned long)[insertedObjects count]);
         NSError *error = nil;
+        // to prevent from leaking temporary objects (a must performed step in child-parent MOC design)
         BOOL success = [context obtainPermanentIDsForObjects:[insertedObjects allObjects] error:&error];
         if (!success)
         {
